@@ -31,7 +31,10 @@ export default function RootLayout({
     <html lang="ja">
       <body className="flex bg-gray-50 min-h-screen">
         <Navigation />
-        <main className="flex-1 p-8 overflow-auto">{children}</main>
+        {/* モバイル: 下部タブバー分の余白 pb-20、デスクトップ: 余白なし */}
+        <main className="flex-1 p-4 md:p-8 overflow-auto pb-24 md:pb-8">
+          {children}
+        </main>
       </body>
     </html>
   )
