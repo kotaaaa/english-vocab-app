@@ -76,11 +76,6 @@ export default function ProgressPage() {
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2 mb-1">
                       <span className="font-semibold text-gray-800">{word.english}</span>
-                      {word.category && (
-                        <span className="text-xs bg-indigo-100 text-indigo-600 px-2 py-0.5 rounded-full">
-                          {word.category}
-                        </span>
-                      )}
                     </div>
                     <p className="text-gray-500 text-sm mb-3">{word.japanese}</p>
                     <ProgressBar level={level} />

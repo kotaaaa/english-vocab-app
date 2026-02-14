@@ -37,11 +37,6 @@ export default function FlashCard({ word, onCorrect, onIncorrect }: FlashCardPro
           >
             <p className="text-xs text-indigo-400 mb-4 uppercase tracking-widest">English</p>
             <p className="text-4xl font-bold text-gray-800">{word.english}</p>
-            {word.category && (
-              <span className="mt-4 text-xs bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full">
-                {word.category}
-              </span>
-            )}
             <p className="mt-6 text-sm text-gray-400">クリックして答えを見る</p>
           </div>
           {/* Back */}
@@ -54,9 +49,14 @@ export default function FlashCard({ word, onCorrect, onIncorrect }: FlashCardPro
           >
             <p className="text-xs text-indigo-300 mb-4 uppercase tracking-widest">Japanese</p>
             <p className="text-3xl font-bold text-white text-center">{word.japanese}</p>
-            {word.example && (
+            {word.exampleEn && (
               <p className="mt-4 text-sm text-indigo-200 text-center italic">
-                &quot;{word.example}&quot;
+                &quot;{word.exampleEn}&quot;
+              </p>
+            )}
+            {word.exampleJa && (
+              <p className="mt-1 text-sm text-indigo-300 text-center">
+                {word.exampleJa}
               </p>
             )}
           </div>

@@ -2,8 +2,8 @@ export interface Word {
   id: string
   english: string
   japanese: string
-  example?: string
-  category?: string
+  exampleEn?: string  // 例文（英語）
+  exampleJa?: string  // 例文（日本語）
   createdAt: string
 }
 

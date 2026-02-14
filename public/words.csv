@@ -1,6 +1,351 @@
-english,japanese,example,category
-abundant,豊富な、十分な,The region has abundant natural resources.,形容詞
-meticulous,細心の注意を払う、几帳面な,She is meticulous about her work.,形容詞
-perseverance,忍耐、根気,Success requires perseverance and hard work.,名詞
-eloquent,雄弁な、表現力豊かな,He gave an eloquent speech at the ceremony.,形容詞
-mitigate,緩和する、軽減する,We need to mitigate the risks of climate change.,動詞
+english,japanese,exampleEn,exampleJa
+whilst,~している間に; ~だけれども,Using a mobile phone whilst driving can cause serious accidents.,運転中に携帯電話を使用すると重大な事故につながる。
+workforce,労働人口; 総従業員,Japan's aging workforce will lead to problems for its economy.,高齢化する日本の労働人口は国の経済にとって問題となる。
+albeit,~とはいえ; たとえ〜といえども,The prime minister's policies on education were effective; albeit costly.,首相の教育政策は費用がかかるが有効だった。
+semantic,意味（論）の; 語義（論）の,Semantic confusion arises when terms are vague in meaning.,用語の意味が曖昧だと意味論的な混乱が生じる。
+Mediterranean,地中海（沿岸地域）の,Subtropical climates are common in Mediterranean countries.,地中海諸国では亜熱帯気候が一般的だ。
+lexical,語彙の,Words with multiple meanings suffer from lexical ambiguity.,複数の意味を持つ語には語彙の曖昧さというマイナス面がある。
+iris,（眼球の）虹彩,The iris regulates the amount of light entering the eye.,虹彩は目に入る光の量を調節する。
+sulphur,硫黄,Sulphur hot springs are common in Japan's mountainous regions.,硫黄の温泉は日本の山岳地帯によく見られる。
+veterinary,獣医の［に関する］,Most veterinary clinics are ill-equipped to treat large animals.,ほとんどの動物病院では大型動物を治療する設備が十分ではない。
+gills,（魚などの）えら,Fish get the oxygen they require by using their gills.,魚はえらを使って必要な酸素を取り込む。
+vested,既得の; 所有の確定した,China has a vested interest in the rare earth market.,中国はレアアース市場に既得権益を持っている。
+bilateral,双方の; 2国間の,Australia is discussing bilateral trade agreements with African countries.,オーストラリアはアフリカ諸国と2国間貿易協定について協議している。
+discrete,分離した; 別々の,The stages of research were divided into three discrete categories.,研究の段階は3つの別々の部門に分かれていた。
+foliage,（草木の）葉（全部）; 群葉,The tourists admired the colourful autumn foliage.,観光客は色とりどりの紅葉に感嘆した。
+terminology,術語; （専門）用語,Graduate students should be familiar with the terminology used on this course.,大学院生はこの講座で使用される専門用語をよく知っているべきだ。
+lateral,横（へ）の; 側面の,He trimmed the lateral branches of the tree.,彼は木の側枝を刈り取った。
+arguably,ほぼ間違いなく; おそらく,Sharks are arguably the most feared creature in the world.,サメはおそらく世界で最も恐れられている生き物だ。
+optimum,最適の; 最善の,Scientists are undecided on the optimum temperature for quality sleep.,科学者は質の良い睡眠を取るための最適温度を決めかねている。
+canteen,（工場・学校などの）食堂; 売店,Most employees disliked the food served in the company canteen.,ほとんどの従業員は社員食堂で出される食事を嫌った。
+glucose,グルコース; ブドウ糖,Glucose is a simple sugar that provides energy.,ブドウ糖はエネルギーを供給する単糖だ。
+qualitative,（性）質上の; 質的な,The appreciation of art involves making qualitative judgements.,芸術鑑賞で重要な要素は質的評価だ。
+equitable,公平な; 正当な,The manager found an equitable solution to the employees' disagreement.,マネージャーは従業員間の争いに公平な解決法を見いだした。
+algae,藻; 藻類,Algae are becoming increasingly important to scientific research.,藻類は科学の研究にますます重要になってきている。
+manoeuvre,巧妙な手段; 策略,The mayor was elected as a result of political manoeuvres.,市長は政治的策略の結果選出された。
+sediment,堆積物; 沈殿物,The researcher found a rare fossil in the ocean floor sediment.,その研究者は海底の堆積物に希少な化石を発見した。
+vicinity,近隣; 近辺,There are many restaurants in the vicinity of the Eiffel Tower.,エッフェル塔付近にはたくさんのレストランがある。
+undue,必要以上の; 過度の,Even successful policies can receive undue media criticism.,成功している政策でもメディアから過度の批判を受けることがある。
+homogeneous,同種の; 均質の,Japan is often described as a homogeneous society.,日本はしばしば均質的な社会だと言われる。
+irresistible,抵抗できない; 抑えられない,The new student found the social pressure to drink irresistible.,その新入生は飲酒への社会的圧力には抵抗できないと感じた。
+remuneration,報酬; 報償; 給料,Chief executives are often criticised for their excessive remuneration.,最高経営責任者たちはしばしば過度な報酬を批判される。
+lava,溶岩,The village was buried in lava from the volcano.,その村は火山からの溶岩に埋もれた。
+draught,（船の）喫水; 隙間風,Consider the size and draught of vessels when designing canals.,水路を設計する際には船舶の大きさと喫水を考慮せよ。
+subsistence,ぎりぎりの生計,Unemployment benefits are only enough to provide a bare subsistence.,失業手当はかろうじてぎりぎりの生活をするのに間に合うだけだ。
+deregulation,規制撤廃; 緩和,The country's economy grew after its monetary deregulation.,金融緩和後、その国の経済は成長した。
+floral,花の（ような）; 植物群の,The designer was famous for her floral patterns.,そのデザイナーは花柄で有名だった。
+arable,耕作に適した［使用される］,The English countryside boasts a large amount of arable land.,イギリスの田舎は耕作に適した土地が多いことが誇りだ。
+boar,イノシシ; （去勢しない）雄ブタ,The number of wild boars in nature is decreasing.,野生のイノシシの数が減っている。
+suffrage,選挙権; 参政権,Democracies are based on the principle of universal suffrage.,民主主義国家は普遍的な参政権の原理に基づいている。
+formative,形成［発達］（期）の,Entrepreneurs must work hard during their companies' formative period.,起業家は会社の形成期には一生懸命働かなければならない。
+precedence,（〜に対する）優先; 先行,Speed takes precedence over quality in some projects.,スピードが質より優先されるプロジェクトもある。
+clad,（---の）衣服を着た,He was smartly clad in a tailcoat and bowtie.,彼は粋に燕尾服と蝶ネクタイを身に着けていた。
+bereavement,死別; 先立たれること,The president was absent from work due to a family bereavement.,社長は家族に不幸があったため仕事を休んだ。
+detrimental,有害な; 不利益の,Smoking has been proven to be detrimental to health.,喫煙は健康に有害であると証明されている。
+uptake,理解力; のみ込み,Students quick on the uptake soon spotted the contradiction.,のみ込みの早い学生はすぐに矛盾を見つけた。
+molar,臼歯,Molars are mainly used for chewing rather than biting.,臼歯はかじることよりもむしろそしゃくに使われる。
+embankment,堤防; 土手; 盛り土,On Sundays local children played on the embankment.,日曜日には地元の子どもはその土手で遊んだ。
+intermittent,断続する; 間欠的な,British bands have enjoyed intermittent success in the US music market.,イギリスのバンドはアメリカの音楽市場で断続的な成功を収めてきた。
+physiology,生理学; 生理（機能）,The research was done by a biologist specialising in physiology.,その研究は生理学を専門とする生物学者によってなされた。
+soluble,溶解できる; 可溶性の,Soluble substances will dissolve in certain liquids.,可溶性の物質はある特定の液体に溶ける。
+apex,頂点; 頂上; 先端,The Supreme Court is the apex of the American judiciary.,最高裁判所はアメリカの司法制度の頂点である。
+preferential,優先的な; 優遇の; 特恵の,The teacher did not give his own son preferential treatment.,その教師は自分の息子を優遇しなかった。
+impartial,偏らない; 偏見のない; 公平な,The jury's judgement on the case was fair and impartial.,その件における陪審の判決は公正で偏見のないものだった。
+terrestrial,陸生の; 陸上の; 地球(上)の,Terrestrial heat is a fashionable new energy source.,地熱は流行の新エネルギー源だ。
+devious,遠回りの; 曲がりくねった; 遠隔の,We took a scenic but devious route to the village.,私たちはその村まで景色が良いが遠回りの道を行った。
+cervical,子宮頚管部の; 首の; 頚部の,Regular cervical screening is strongly recommended for women over 20.,20歳以上の女性は定期的に子宮頚管部の検査を受けることが強く推奨される。
+aback,(be taken abackで)不意を打たれる,The people were taken aback by the prime minister's resignation.,人々は首相の辞任に不意を打たれた。
+effluent,排水; 汚水,Industrial effluent has polluted the river for years.,産業排水は長年にわたってその川を汚染してきた。
+endemic,(病気が将来ある地方に)特有の,The disease is endemic in parts of Northern Europe.,その病気は北ヨーロッパのある地域に特有のものだ。
+unwittingly,無意識に; 知らず知らずに,They unwittingly scared the local wildlife with their loud voices.,彼らは気付かないうちに大声で現地の野生生物を怖がらせた。
+bonanza,思いがけない幸運; 大当たり; 多量,The new discovery proved to be a bonanza for scientists.,その新発見は科学者たちにとって思いがけない幸運となった。
+naysayer,いつも反対する人,Large construction projects always attract naysayers.,大規模な建設計画には反対者がつきものだ。
+Antarctica,南極大陸,Antarctica's freezing conditions can be dangerous to unprepared visitors.,南極大陸のいてついた環境は，準備不足の訪問者には危険なことがある。
+dyke,堤; 堤防; 岩脈,Dykes are highly visible in the Dutch countryside.,オランダの田舎では堤防がひときわ人目を引く。
+measurable,目につく(ほどの); はっきりと分かる,The economy is making a measurable but slow recovery.,景気ははっきりと分かるがゆっくりとした回復をしている。
+dissertation,論文; (特に)学位論文,The graduate student wrote a dissertation on the ethics of Aristotle.,その大学院生はアリストテレスの倫理学についての学位論文を書いた。
+glacial,氷河の; 氷の(ような),Rates of glacial erosion are variable.,氷河の浸食の速度は変化する。
+rudimentary,初歩的な; 未発達の,Learning musical scales is necessary to develop rudimentary piano ability.,音階を学ぶことは初歩的なピアノの能力向上に必要だ。
+holistic,全体論の,Liberal politicians advocate a holistic approach to tackling crime.,リベラル派の政治家は犯罪対策に全体論的な取り組み方を唱えている。
+hedgehog,ハリネズミ,Hedgehogs curl themselves into a ball as a defensive action.,ハリネズミは防御行動として体を丸める。
+thence,そこから; その時から,The group of academics flew first to Rome and thence to Paris.,その大学教授グループはまずローマに飛び，そしてそこからパリに飛んだ。
+hypnosis,催眠術; 催眠状態,Hypnosis has proven successful in recalling repressed memories.,催眠術は抑圧された記憶を呼び起こすことができると証明されている。
+thistle,アザミ,Thistles are often seen in the Scottish countryside.,アザミはスコットランドの田舎によく見られる。
+adobe,日干しれんが,Many of the world's oldest buildings are adobe structures.,世界の最も古い建物の多くは日干しれんがでできている。
+millennium,1,000年(紀),The new millennium began on January 1st 2001.,新しい1,000年は2001年の1月1日から始まった。
+quantify,の量を決める[測る]; を定量化する,Happiness is difficult to quantify.,幸福を数値化するのは難しい。
+artefact,人工遺物; 人工物,The British Museum contains thousands of interesting artefacts.,大英博物館は何千もの興味深い人工遺物を所蔵している。
+outlay,支出; 出費; 経費,The company's new venture business required a huge initial outlay.,その会社の新しいベンチャービジネスは巨額の初期支出を必要とした。
+vantage,有利な[眺めの良い]位置; 優勢,The view from the vantage point was magnificent.,その見晴らしの良い場所からの眺めは素晴らしかった。
+primer,入門書; 初歩読本,The book is an excellent primer for beginners.,その本は初心者にとって素晴らしい入門書だ。
+saliva,唾液; つば,Saliva moistens food to help digestion.,唾液は食べ物を湿らせて消化を助ける。
+landfill,埋め立て地; 埋め立て式ごみ処理地,The UK suffers from a lack of landfill sites.,イギリスはごみの埋め立て地の不足に頭を抱えている。
+nocturnal,夜行性の; 夜(間)の,A famous example of a nocturnal creature is the bat.,夜行性の生物の代表的な例はコウモリである。
+precipitation,降雨; 降水量,The average annual precipitation in London is about 24 inches.,ロンドンの平均年間降水量は約24インチである。
+convection,対流; 環流,Convection heaters work by warming the air.,対流暖房機は空気を暖めることで機能する。
+dung,ふん; 肥やし,Dung can be used as a fertiliser.,動物のふんは肥料として使うことができる。
+inextricably,密接に; 切り離せないほどに,Language is inextricably linked with culture.,言語は文化と密接に結び付いている。
+topography,地形(学); 地勢(学),A good hiking map will show the topography of the region.,よくできたハイキング用地図にはその地域の地形が示されている。
+brunt,(-の)ほこ先; (非難の)矢面,Coastal cities will often bear the brunt of typhoons.,海岸沿いの都市はしばしば台風のほこ先となる。
+esoteric,難解な; 深遠な; 秘儀の,Certain schools of Buddhism have esoteric teachings.,仏教のある宗派は難解な教義を持っている。
+asymmetry,非対称,Asymmetry in a building plan increases damage during an earthquake.,建築設計における非対称は地震の際の被害を拡大する。
+wheelbarrow,(一輪の)手押し車,Workmen were bringing sand in wheelbarrows.,作業員たちが手押し車で砂を運んでいた。
+clientele,(集合的に)顧客; 依頼人,The restaurant attracted a large foreign clientele.,そのレストランは多くの外国人顧客を引き付けている。
+patently,明白に; 公然と,It was patently obvious that the murder suspect was lying., 殺人容疑者がうそをついていることは明白だった。
+provenance,起源; 出所; 由来,Christianity believes that the world is of divine provenance.,キリスト教は世界が神に由来すると信じている。
+affective,感情の; 情動(性)の,Affective disorders usually involve very rapid changes of mood.,感情障害は通常とても急速な気分の変化を伴う。
+amorphous,形のない; 無定形の,Justice is rather an amorphous concept.,正義はどちらかと言えば明確な形のない概念だ。
+autocratic,独裁的な; 専制(君主)の,Many people disliked the king's autocratic attitude.,多くの人は王の独裁的な態度を嫌った。
+consequential,重大な; 重要な; 結果として起こる,Today's negotiation proved highly consequential towards securing the contract., 今日の交渉は契約獲得に向けて極めて重要なものとなった。
+armoury,兵器庫; 蓄え,The armed forces have numerous weapons in their armoury.,軍は兵器庫におびたただしい武器を保管している。
+mite,ダニ,Many people are allergic to household mites.,多くの人はイエダニにアレルギーがある。
+detract,(価値などを)損なう; おとしめる,The scandal will not detract from the politician's achievement.,そのスキャンダルがその政治家の功績を損なうことはない。
+accrue,(〜に)生じる; 増加する,Benefits will accrue to the city from reconstruction.,復興によって市に利益が生じる。
+benchmark,尺度; 基準,The employee had set the benchmark for monthly sales.,その社員が月間売り上げの基準となっていた。
+lagoon,潟; 潟湖; 礁湖,The party was impressed by the beauty of the lagoon.,一行は潟湖の美しさに感銘を受けた。
+tremor,震動; 揺れ,California residents are used to minor earth tremors.,カリフォルニアの住民は小さな地震には慣れている。
+underpin,を支える; 強める; 補強する,Belief in God underpins the Christian philosophy.,神への信仰がキリスト教の考え方を支えている。
+genome,ゲノム,The Human Genome Project holds the key to human life.,ヒトゲノムプロジェクトは人間の生命の鍵を握っている。
+exuberant,生気あふれる; 生き生きとした,Her friends loved her exuberant personality.,友人たちは彼女の生き生きとした人柄が好きだった。
+conical,円すい状の,Mount Fuji is often praised for its perfectly conical appearance.,富士山はしばしばその完璧な円すい形の外観でたたえられる。
+phosphorus,リン,America has a long history of mining phosphorus.,アメリカはリン採掘に長い歴史を持つ。
+antidote,解毒剤,The antidote must be taken within six hours of being poisoned.,その解毒剤は毒の被害に遭ったら6時間以内に服用しなければならない。
+bounty,恵み深さ; (自然の)豊かな恵み,The field was filled with a bounty of juicy vegetables.,その畑はみずみずしい野菜の恵みであふれていた。
+deforestation,森林破壊; 伐採,Deforestation has become a major issue for Brazil in particular.,森林破壊は特にブラジルで大きな問題となっている。
+pancreas,膵臓,Cancer of the pancreas is especially lethal.,膵臓のがんは特に命に関わる。
+predominate,優位を占める; 圧倒的に多い,Men tend to predominate in the manufacturing sector.,製造部門では男性が圧倒的に多い傾向がある。
+hedgerow,生け垣,Properties are often separated by hedgerows.,所有地はしばしば生け垣で仕切られている。
+trappings,(地位などを)象徴する物,The monarch had the trappings but not the reality of power.,その君主は地位にふさわしい所有物を持っていたが，現実の権力は持っていなかった。
+forerunner,先駆者; 前身; 先駆け,Folk music was one of the forerunners of rock.,フォークミュージックはロックの先駆けの1つだった。
+biomass,バイオマス; 生物量,Ecologists have long advocated biomass as a source of fuel.,環境保護論者は以前からバイオマスを燃料源として提唱してきた。
+acupuncture,はり療法,Acupuncture has been increasingly accepted in Western medicine.,はり療法は次第に西洋医学で受け入れられるようになっている。
+unscathed,無傷の; 無事な,Fortunately the valuable painting was unscathed by the fire.,幸いなことにその貴重な絵は火事でも無事だった。
+judicious,思慮分別のある; 賢明な,The executive showed judicious thinking in choosing his successor.,その経営者は後継者の選択に賢明な判断を示した。
+nicotine,ニコチン,Nicotine patches are used by people intent on quitting smoking.,ニコチンパッチは禁煙を決意している人が使うものだ。
+viscous,粘性の; ねばねばする,The sap is a highly viscous substance.,樹液は非常に粘性の高い物質だ。
+silt,(河口などの底の)沈泥,The beaches of Lyme Regis in England contain a lot of silt.,イングランドのライムリージスの砂浜は沈泥を多く含む。
+credence,信用; 信頼,The data lent credence to the economist's argument.,そのデータによってその経済学者の主張に対する信頼が高まった。
+eaves,軒; ひさし,The couple took shelter from the rain under the eaves.,その夫婦は軒下で雨宿りした。
+puncture,に穴を開ける; (鋭い物で開いた)穴,Somebody punctured the rear tyre of the politician's car.,何者かがその政治家の車の後輪に穴を開けた。
+causeway,(低湿地に作った)土手道,After a heavy rain, the causeway can become flooded.,大雨の後その土手道は水浸しになることがある。
+hinterland,内陸地域; 奥地; 後背地,The settlers gradually moved from the coast into the hinterland.,開拓者たちは沿岸から内陸地域に徐々に移動した。
+impinge,(〜に)影響を及ぼす,This new law may impinge on civil liberties.,この新法は市民の自由に影響を及ぼすかもしれない。
+absenteeism,常習的欠勤; 欠席,The company is investigating the reason for increased absenteeism.,その会社は常習的欠勤増加の原因を調査している。
+engrossed,(〜に)没頭して; 夢中になって,The physicist was so engrossed in his research that he forgot the time.,その物理学者は研究に没頭するあまり時間を忘れた。
+incongruous,不調和な; 不釣り合いな,It seemed incongruous for a former general to be a pacifist.,かつての将軍が平和主義者なのは不釣り合いに思えた。
+cornerstone,基礎; 土台; 隅石; 礎石,Trust is the cornerstone of any workplace relationship.,いかなる職場の人間関係でも信頼が基礎となる。
+primate,霊長類,The majority of primates can be found in warmer climates.,霊長類の大半は温暖な気候の所に生息する。
+prodigious,莫大な; 膨大な; 桁外れの,Everyone admired the young actor's prodigious talents.,その若い俳優の桁外れの才能に誰もが感嘆した。
+streamline,を合理化する; 簡素化する,Our company must streamline operations to remain competitive.,わが社は競争力を維持するために事業を合理化しなければならない。
+succumb,(〜に)屈する; 負ける,Even healthy young people succumbed to the virus.,健康な若者でさえそのウイルスに屈した。
+bronchitis,気管支炎,Smoking is a major cause of bronchitis.,喫煙は気管支炎の主原因だ。
+stratosphere,成層圏,The rocket was launched into the stratosphere.,ロケットは成層圏に打ち上げられた。
+neuron,神経細胞; ニューロン,Neuron disease causes a person's actions and responses to slow.,神経細胞の病気は人の行動や反応を遅くさせる。
+anecdotal,逸話的な; 裏付けに乏しい,The book only provided anecdotal evidence for its claims.,その本は主張に対して裏付けの乏しい証拠しか挙げていなかった。
+inexorable,動かし難い; 不変の; 避け難い,The inexorable rise in energy costs must be addressed.,エネルギーコストの避け難い上昇に対処しなければならない。
+puberty,思春期,Puberty can cause children to have mood swings.,思春期になると子どもは気分の変化が大きくなることがある。
+unload,(積み荷を)降ろす,It takes several hours to unload a large container ship.,大型のコンテナ船から積み荷を降ろすには数時間かかる。
+photosynthesis,光合成,Plants create food from sunlight in the process of photosynthesis.,植物は光合成を通して日光から養分を作り出す。
+banal,陳腐な; ありふれた; 面白くもない,Many English textbooks are banal in tone.,英語の教科書の多くはありふれた調子で書かれている。
+funnel,じょうご; (空気を)集中させる,Funnels are used to pour liquid into narrow openings.,じょうごは狭い開口部に液体を注ぐために使われる。
+subterranean,地下の; 地中の,Earthquake prediction apparatus is highly sensitive to subterranean movements.,地震予知のための機器は地下の動きに非常に敏感である。
+torrential,奔流の（ような）; 土砂降りの,Torrential rain meant the outdoor football match was abandoned.,土砂降りの雨は屋外でのサッカーの試合の中止を意味した。
+sanitation,公衆衛生（学）,Public sanitation was a huge issue in 19th-century Europe.,19世紀のヨーロッパでは公衆衛生が非常に大きな問題だった。
+cub,（肉食哺乳動物の）子; 幼獣,Lion cubs are fiercely protected by their mother.,ライオンの子は母ライオンが体を張って守っている。
+incineration,焼却; 火葬,Incineration of garbage is a controversial issue in Europe.,ヨーロッパではごみの焼却は物議を醸す問題である。
+reciprocity,相互依存［作用］; 相互関係,The couple hosted the guest without any expectation of reciprocity.,夫妻は見返りを期待することなく客をもてなした。
+replicate,を複製する; 再現する,The scientist was unable to replicate his initial test results.,その科学者は当初の実験結果を再現することができなかった。
+adjunct,（〜の）付属物; 添え物,The textbook is designed as an adjunct to the lecture.,そのテキストは講義を補足するものとして作られている。
+sag,（重みで）たわむ; 垂れ下がる,The boughs of the tree sagged with fruit.,その木の枝は果実の重みでたわんだ。
+threefold,3重［倍］に,The improved economy resulted in sales increasing threefold.,経済が上向きになって売り上げが3倍に増えた。
+astrology,占星術,Astrology claims to predict the future using the stars.,占星術は星を使って未来を予測すると主張する。
+preponderance,圧倒的多数; （数などでの）優勢,The English textbook contained a preponderance of grammar-based activities.,その英語の教科書は文法を基礎とした作業を圧倒的に多く含んでいた。
+primeval,原始時代の; 太古の,The archaeologists discovered many primeval tools on their dig.,考古学者たちは発掘現場でたくさんの原始時代の道具を発見した。
+porous,小穴の多い; 多孔性の,Filters must be made from porous materials.,フィルターは多孔性の素材で作られなければならない。
+nectar,（植物の）蜜,Bees take nectar from plants to make honey.,ハチは蜂蜜を作るために植物から蜜を集める。
+archipelago,群島; 諸島,Rain is forecast throughout the Philippine archipelago this weekend.,フィリピン諸島全体が今週末は雨の予報になっている。
+blight,（〜の）破滅［失敗］の原因; 胴枯れ病,Pollution is a blight on many crowded cities.,公害は多くの人口の密集した都市に被害をもたらすものだ。
+Celsius,摂氏の,The temperature today is 30 degrees Celsius.,今日の気温は摂氏30度だ。
+chum,仲良し; 親友,The two professors had been chums for years.,両教授は長年の親友だった。
+obnoxious,非常に不快な; いとわしい,Many viewers found the comedy obnoxious.,見た人の多くはその喜劇を非常に不快だと感じた。
+scourge,苦悩のもと; 天罰; たたり,Corruption is often the scourge of politics.,汚職はしばしば政治の苦悩のもとだ。
+damning,（証拠などが）有罪を証明する,The police presented damning evidence against the suspect.,警察は容疑者に対して決定的に不利な証拠を突き付けた。
+elucidate,を明らかにする; 解明する,The professor asked the student to elucidate his argument.,教授は論点を明らかにするようその学生に言った。
+altruistic,利他的な,Socialism is based on the assumption that people are altruistic.,社会主義は人が利他的であるという前提に基づいている。
+disenchantment,幻滅; 失望,Many people experience disenchantment with their jobs.,多くの人は自分の仕事に対する幻滅を経験する。
+curtail,を短縮［削減; 縮小］する,Many companies are trying to curtail overtime in this economy.,この経済状況の中で多くの企業は残業を削減しようとしている。
+malevolent,悪意のある; よこしまな,The judge described the criminal as a malevolent cheat.,裁判官は犯人を悪意のある詐欺師と呼んだ。
+prohibitive,（税・規則などが）禁止する; （値段が）高い,Investors were put off by the prohibitive trade laws.,投資家は禁止項目の多い貿易法に意欲をそがれた。
+appreciably,感じられるほどに; かなり,Sales did not increase appreciably after the advertising campaign.,広告キャンペーンの後で売り上げが目に見えて伸びたわけではなかった。
+deviate,（〜から）逸脱する,The minister's economic analysis deviated from conventional wisdom.,大臣の経済分析は世間一般の通念から逸脱していた。
+exacerbate,を悪化させる; を憤激させる,Shipping weapons to unstable regions only exacerbates tensions there.,情勢の不安定な地域に武器を送ることはその地域の実情を悪化させるだけだ。
+outcrop,（地層・鉱脈の）露出（部）; 露頭,The castle was built on a large stone outcrop.,その城は大きな石のむき出し部分の上に建っていた。
+reiterate,を（強調のために）繰り返す,The defence lawyer reiterated the main points of his argument.,被告側弁護士は主張の主な点を繰り返した。
+impede,を妨げ（て遅らせ）る; 邪魔する,Excessive patent regulation can impede innovation and creativity.,過剰な特許規制は革新と創造力の妨げとなり得る。
+sawdust,おがくず,The floor of the workshop was always covered with sawdust.,その作業場の床は常におがくずに覆われていた。
+pottery,土器; 陶器,Earthenware products are often used in the Japanese tea ceremony.,日本の茶道ではよく陶器の製品が使われる。
+sledge,そり,The children enjoyed riding their sledges down the hill.,子どもたちは坂でそり滑りを楽しんだ。
+forceps,（外科・歯科医の）鉗子,Surgical forceps are usually made of stainless steel.,外科用の鉗子はたいていステンレス鋼でできている。
+irrevocable,取り消せない; 変更できない,The war-torn village has suffered irrevocable damage.,戦争で破壊された村は取り返しのつかない被害を被った。
+palatable,口に合う; おいしい,New Zealand produces some very palatable wines.,ニュージーランドは非常においしいワインを産出している。
+taxonomy,分類学; 分類（法）,Animal taxonomy is the classification of animals based on shared characteristics.,動物分類学は共通の特徴に基づく動物の分類である。
+gullible,だまされやすい,The Internet can be a trap for gullible consumers.,インターネットはだまされやすい消費者にとって落とし穴になり得る。
+scrupulous,綿密な; 周到な; 良心的な,The historian was famous for his scrupulous attention to evidence.,その歴史家は証拠に細心の注意を払うことで有名だった。
+unaided,援助なしの; 自力の,Head lice are invisible to the unaided eye.,アタマジラミは肉眼では見えない。
+align,を1列［一直線］に並べる,All the mirrors in the room should be aligned.,部屋の鏡は全部1列に並べるべきだ。
+forgo,をなしで済ませる; 慎む; をやめる,The war forced many youngsters to forgo a university education.,その戦争によって多くの若者は大学教育を諦めることを余儀なくされた。
+quirk,（変わった）癖; 奇癖,The mathematician was known for his personality quirks.,その数学者は個性的な奇癖で知られていた。
+horticulture,園芸（学［術］）,Many universities provide courses in horticulture.,多くの大学が園芸学のコースを提供している。
+forage,（飼料・食糧を）捜し回る,The livestock was allowed to freely forage in the field.,家畜は牧草地で自由に餌を捜し回ることができた。
+regimen,健康増進法; 指導計画,Most successful athletes follow a tough training regimen.,成功しているアスリートのほとんどは過酷なトレーニングメニューに従っている。
+odyssey,長い放浪［冒険］の旅,The story is about the odyssey of an ancient warrior.,それは古代の戦士が冒険の旅をする物語だ。
+froth,(ビールなどの)泡，あぶく,The chemical reaction produced a lot of froth.,化学反応によりたくさんの泡が出た。
+introspection,内省，内観,Much philosophy has been based on introspection.,多くの哲学は内省に基づいてきた。
+fallow,(土地が)休閑中の,Some types of traditional farming involve leaving some fields fallow.,伝統的農法の中には畑の一部を休耕地とするものもある。
+grapple,(~と)取っ組み合いをする,The security guard grappled with the intruder.,警備員は侵入者と格闘した。
+wane,(徐々に)弱くなる，衰退する,As athletes age, their talent begins to wane.,アスリートは年を取るにつれて，その才能も衰え始める。
+appease,をなだめる,Efforts to appease the dictator and avoid war were unsuccessful.,独裁者をなだめて戦争を回避しようとする努力は失敗に終わった。
+dampen,を湿らせる,Slightly dampen the wall surface before applying the wallpaper.,壁紙を貼る前に，軽く壁の表面を湿らせるとよい。
+dehydration,脱水症状;脱水，乾燥,Dehydration is a common problem in the desert.,脱水症状は砂漠ではよくある問題だ。
+disseminate,を広める，流布させる,The Federal Reserve mistakenly disseminated its report early.,連邦準備銀行は間違えて早くレポートを公表した。
+downpour,大雨，豪雨，土砂降り,Everyone was surprised by the sudden downpour of rain.,突然の豪雨に皆驚いた。
+fickle,移り気な;変わりやすい,Television audiences are known for being fickle.,テレビの視聴者は移り気なことで有名だ。
+fortuitous,偶然の，思いがけない,Meeting the CEO in the elevator was a fortuitous opportunity.,エレベーターの中でCEOと遭遇したのは思いがけないチャンスだった。
+leaded,(ガソリンなどが)有鉛の,Environmental concerns have led to increased criticism of leaded petrol.,環境への関心から有鉛ガソリンへの批判が高まっている。
+lethargy,無気力，倦怠;無関心,Lethargy can be a symptom of many illnesses.,無気力は多くの病気の症状として現れることがある。
+pup,子イヌ,The pup took several months to become toilet-trained.,その子イヌのトイレトレーニングには数か月かかった。
+dearth,(~の)不足，欠乏,The country has a dearth of engineering graduates.,その国では工学系の大卒が不足している。
+kaleidoscope,万華鏡;絶えず変化するもの,The multiple reflections of internal mirrors make kaleidoscopes so beautiful.,内部の鏡が何重にも反射することで万華鏡はこんなにも美しくなる。
+propagate,を増殖[繁殖]させる;を広める,It is possible to propagate some types of houseplant from single leaves.,室内用の植木には 1枚の葉から増やせる種類のものがある。
+concave,凹面の，凹形の,Concave lenses are used to correct nearsightedness.,凹面のレンズは近眼を矯正するために使われる。
+fluctuate,(絶えず)変動する，上下する,The currency exchange rate will continue to fluctuate.,為替レートは今後も変動するだろう。
+rodent,齧歯類の動物,Many major cities have a sizeable rodent population.,多くの大都市には齧歯類動物がかなりの規模で生息している。
+adage,ことわざ，格言，金言,As the old adage says, ‘Look before you leap.’,古いことわざにあるように，「転ばぬ先のつえ」だよ。
+capricious,気まぐれな，移り気な,As the dictator aged, he became increasingly capricious.,その独裁者は老いるにつれてますます気まぐれになった。
+unwind,くつろぐ;(巻いたものが)ほどける,Many people find a glass of wine helps them to unwind.,多くの人は 1杯のワインがくつろぐのに役立つと感じる。
+sulphide,硫化物,Many sulphides are toxic and should be handled carefully.,多くの硫化物は有毒で，取り扱いには注意が必要だ。
+vertebrate,脊椎動物,Vertebrates first originated about 500 million years ago.,脊椎動物は約5億年前に初めて出現した。
+avidly,熱心に，貪欲に,The old grandfather avidly recalled his teenage years.,年老いた祖父は熱心に自分の 10代のころを思い出していた。
+basalt,玄武岩,Basalt is a main material in stone wool insulation.,玄武岩は岩綿断熱材の主な原料である。
+clot,(血などの)塊，凝血,The prime minister was incapacitated due to a blood clot.,首相は血栓を患って職務を遂行できなくなった。
+exponential,急激な，指数関数的な,The increase in the number of working women has been exponential.,働く女性の数の増加は急激である。
+decipher,を解読する，判読する,Archaeologists try to decipher ancient languages.,考古学者は古代の言語を解読しようとする。
+prodigy,神童，天才，奇才,Most champion chess players were child prodigies.,チェス選手のチャンピオンのほとんどは神童だった。
+pronouncement,宣告，宣言,The world media listens carefully to the Pope’s pronouncements.,法王の宣言に世界のメディアが注意深く耳を傾ける。
+shortlist,最終的選抜候補者名簿,The manager made a shortlist of applicants for the job.,マネージャーはその仕事の最終候補者名簿を作成した。
+dredge,を浚渫する,They voted to dredge the river to make it deeper.,彼らは川をもっと深くするために浚渫することを投票で決めた。
+treacle,糖蜜,Treacle is a syrup made from refined sugar.,糖蜜は精製された砂糖から作られるシロップだ。
+wobble,ぐらぐらする，ふらふら揺れる,The buildings began to wobble during the sizeable earthquake.,ビルは大きな地震でぐらぐらと揺れ出した。
+tenable,(理論などが)批判に耐え得る,This hypothesis is no longer tenable because of the finding.,その発見によってこの仮説はもはや弁護できなくなっている。
+apace,速やかに，急速に,The government’s research into alternative energy continued apace.,政府の代替エネルギー研究は急速に進んだ。
+inductive,帰納的な,Inductive reasoning involves using particular examples to reach a general conclusion.,帰納的推論は一般的結論に達するために特定の例を用いることを伴う。
+phobia,恐怖症，病的恐怖[嫌悪],Some people have a phobia of the number thirteen., 13という数に病的恐怖を感じる人もいる。
+chink,(細長い)裂け目，割れ目，隙間,The children squeezed through a chink in the fence.,子どもたちは柵の割れ目から入り込んだ。
+gimmick,巧妙な仕掛け，新機軸，からくり,The news story was nothing but a marketing gimmick.,そのニュースはマーケティング上の仕掛けにすぎなかった。
+masquerade,(~の)ふりをする,Many wealthy politicians like to masquerade as middle-class people.,裕福な政治家の多くは中産階級の人のふりをしたがる。
+loath,(~するのが)気の進まない，嫌で,The guard was loath to let the strangers into the building.,警備員は知らない人を建物に入れるのを嫌がった。
+roundly,厳しく;完全に,The committee’s report roundly criticised our handling of the situation.,委員会の報告は，われわれの状況の対処の仕方を厳しく批判した。
+aqueduct,送水路;(高架式)水道橋,Many Roman aqueducts are still standing to this day.,多くのローマ時代の送水路が今日に至るまで残っている。
+malleable,(金属が)可鍛性の;順応性のある,Copper is used for wire because of its malleable quality.,銅は可鍛性の性質があるのでワイヤーとして使用される。
+quadruple,4倍になる,Sales are expected to quadruple over the next five years.,売り上げは向こう 5年間で4倍になると期待されている。
+scuffle,乱闘,The robber was arrested after a scuffle with the police.,強盗は警官との乱闘の末逮捕された。
+audacious,大胆不敵な; 無謀な,His audacious criticisms of the government made him famous.,政府を大胆不敵に批判したことで彼は有名になった。
+ethereal,霊妙な,The old church had an ethereal atmosphere.,その古い教会には霊妙な雰囲気があった。
+opportunism,日和見主義; 御都合主義,The new policy was seen as political opportunism.,その新しい政策は政治的御都合主義と見なされた。
+tout,を（〜と）褒めちぎる; 推奨する,Biofuels are touted as the answer to global warming.,生物燃料は地球温暖化の解決策だと絶賛されている。
+curative,病気に効く; 治療効果のある,Many people trusted the hot spring’s curative powers.,多くの人々はその温泉の治療効果を信じた。
+rendition,（視覚）表現; 描写; 解釈; 演奏,It is a new rendition of an old song.,それは昔の歌を新しく演奏し直したものだ。
+topsoil,表土,Most of the topsoil had been washed away.,表土のほとんどが洗い流されていた。
+exorbitant,法外な; 途方もない,Despite the exorbitant prices; the hotel was full.,法外な宿泊料にもかかわらず，そのホテルは満室だった。
+proliferate,急増［まん延］する; 拡散する,Rabbits have proliferated and caused environmental problems.,ウサギが増殖して環境問題を引き起こしている。
+replenish,を補給する; 補充する,The water in the tank was replenished by rainfall.,タンクの水は雨水で補充された。
+hiccup,しゃっくり; 一時的な障害,There is no agreed cure for the hiccups.,しゃっくりを止める決まった方法はない。
+longitude,経度,All longitudes are measured in relation to Greenwich; London.,全ての経度はロンドンのグリニッジを基に計測される。
+aquifer,帯水層,Only freshwater aquifers are useful for wells.,淡水の帯水層だけが井戸に利用する価値がある。
+presuppose,（物事が）を前提とする,The new plan presupposed government funding.,新しい計画は政府の資金拠出を前提としていた。
+accentuate,を際立たせる; 強調する,His poverty was accentuated by his friends’ wealth.,友人たちの裕福さが彼の貧しさを際立たせていた。
+counterproductive,逆効果の; 非生産的な,The president’s visit was counterproductive and led to an increase in rioting.,大統領の訪問は逆効果で，暴動の増大につながった。
+decrepit,老いぼれた; 老衰した,The old man was so decrepit he could hardly walk.,その老人は老いぼれてほとんど歩くことができなかった。
+extrinsic,外在的な; 非本質的な,Students often choose classes for extrinsic reasons.,学生はしばしば外的な理由で授業を選択する。
+ultrasonic,超音波の,Ultrasonic cleaners use water and very high-pitched sound waves.,超音波洗浄機は水と非常に高い波長の音を使う。
+inhalation,吸入,Inhalation of smoke can damage the lungs.,煙を吸入すると肺に損傷を与えることがある。
+ooze,（液体などが）にじみ出る,Blood was oozing from the bandage around his leg.,彼の脚に巻いた包帯から血がにじみ出ていた。
+overhang,張り出し; 突出部分,He sheltered from the rain under the overhang.,彼は建物の張り出しの下で雨をしのいだ。
+preservative,防腐剤; 保存剤,Some people refuse to eat food containing preservatives.,保存料の入った食品を食べない人もいる。
+engender,を生じさせる; 引き起こす,The miners’ strike engendered further strikes.,炭鉱員たちのストライキはさらなるストライキを生んだ。
+pulley,滑車,Pulleys have been used to lift objects since ancient times.,滑車は物を持ち上げるために古代から使われてきた。
+infirmity,病気; 疾患; 虚弱; 病弱,The old man suffered from various infirmities.,その老人はさまざまな疾患を患っていた。
+encode,を暗号化する,A hidden message was encoded in the broadcast.,その放送の中には隠されたメッセージが暗号化されていた。
+permeate,に染み込む; 浸透する,The smell of mould permeated every corner of the room.,かびの臭いが部屋の隅々に染み渡った。
+runny,半液体状の; 流れやすい,You need a runny cheese to make this cake.,このケーキを作るには柔らかい状態のチーズが必要だ。
+tightrope,綱渡りの綱,The two superpowers walked a tightrope between war and peace.,2大超大国は戦争と平和の間の綱渡りをした。
+incendiary,焼夷性の,The use of incendiary bombs caused much suffering.,焼夷弾の使用は大きな被害をもたらした。
+septic,バクテリアで浄化する; 腐敗性の,Septic tanks were used to treat waste water.,排水を処理するために浄化槽が用いられた。
+inexhaustible,無尽蔵の,Solar power is seen as an inexhaustible energy source.,太陽エネルギーは無尽蔵のエネルギー源と見なされている。
+acronym,頭字語; 頭文字語,IELTS is an acronym for International English Language Testing System.,IELTSは International English Language Testing System の頭字語である。
+roster,名簿; 登録簿; 当番表,Your name will be checked against a roster of examinees.,あなたの名前は受験者名簿と照合されます。
+treadmill,単調な仕事,His job came to seem a pointless treadmill.,彼の仕事は意味のない単調な仕事に思えるようになった。
+bespectacled,眼鏡をかけた,The bespectacled man was a local lawyer.,眼鏡をかけたその男性は地元の弁護士だった。
+carousel,回転コンベヤー（システム）,A lot of people were crowding around the baggage carousel.,多くの人が荷物用回転コンベヤーの周りに群がっていた。
+bask,日光浴をする,Sea lions love to bask in the sun.,アシカは日光浴をするのが大好きだ。
+compendium,（〜の）セット; 一覧; 要約,The book was a compendium of useful information.,その本には役に立つ情報がまとめて載っていた。
+garret,屋根裏部屋,Garrets were usually the cheapest rooms to rent.,通常屋根裏部屋は借りるには一番安い部屋だった。
+ignite,に火をつける; 点火する,It was hard to ignite the damp timber.,湿った木材に火をつけるのは難しかった。
+incisor,門歯; 切歯,In elephants; the incisors developed into tusks.,ゾウの門歯は発達して牙になった。
+insecticide,殺虫剤; 虫取り,The use of insecticides can damage the environment.,殺虫剤の使用は環境に被害をもたらし得る。
+impurity,（-ties）不純物; 不純; 不潔,Impurities in the water made it dangerous to drink.,水に不純物が混ざって，飲むには危険だった。
+obtrusive,押し付けがましい; 出しゃばりの,The speaker was irritated by the man's obtrusive comments.,講演者は男性の出しゃばった発言にいらいらした。
+appraise,を評価する; に値を付ける,An expert was asked to appraise the painting.,専門家がその絵を評価するよう依頼された。
+eugenics,優生学,The image of eugenics was damaged by the Nazis.,優生学のイメージはナチスにより損なわれた。
+olfactory,嗅覚の,Most mammals have similar olfactory systems.,ほとんどの晴乳動物は似たような嗅覚系を持っている。
+pumice,軽石,Pumice stones were used to clean the bottom of the feet.,軽石は足の裏をきれいにするために使われた。
+secrete,を分泌する,Some frogs secrete a poison through their skin.,カエルの中には皮膚から毒を分泌するものもいる。
+aeronautics,航空学; 飛行術,Aircraft designers need a good knowledge of aeronautics.,航空機の設計者には航空学の十分な知識が必要だ。
+germinate,芽を出す,It takes about two weeks for a potato to germinate.,ジャガイモは芽が出るまで2週間くらいかかる。
+taunt,をあざける; 嘲笑する,Taunting can be the first step in serious bullying.,人をあざけることは深刻ないじめの始まりとなることがある。
+tote,を持ち運ぶ; 携帯する,The criminal gang toted various weapons.,その犯罪者集団はさまざまな武器を携帯した。
+firefly,ホタル,Fireflies were released as a tourist attraction.,観光の呼び物としてホタルが放たれた。
+highbrow,知識人向きの; インテリぶった,The professor subscribes to various highbrow journals.,教授は知識人向けの雑誌を幾つも購読している。
+scaffold,（建築の）足場,Some workmen stood on a scaffold.,職人たちが何人か足場に立った。
+rote,機械的記憶,Learning by rote is very different from understanding.,丸暗記と理解は大きく異なる。
+supersede,に取って代わる; （〜の）地位を奪う,Word processors were rapidly superseded by computers.,ワープロはコンピューターに急速に取って代わられた。
+vicissitudes,栄枯盛衰; 浮沈; 変転,The building had survived the vicissitudes of centuries.,その建物は何世紀もの変転に耐えていた。
+centrifugal,遠心性の,Centrifugal pumps were used to deliver the water.,水の供給に遠心ポンプが使われた。
+collate,のページ順をそろえる; を照合する,The secretary collated all the documents in the right order.,秘書は全ての書類のページ順を正しい順番にそろえた。
+octagon,八角［辺］形,The beehive was in the shape of an octagon.,そのハチの巣は八角形をしていた。
+scour,をこすって磨く; ごしごし洗う,You should not scour pans with non-stick surfaces.,焦げつかない表面加工のフライパンをごしごしこするべきではない。
+slither,ずるずる滑る,The snake slithered into a bush and disappeared.,ヘビは茂みの中にするすると入って消え去った。
+statehood,国家としての地位,The country only gained statehood twenty years ago.,その国が国家としての地位を得たのはほんの 20年前のことだ。
+encapsulate,を（〜で）包み込む,Most supplements are encapsulated in gelatin.,ほとんどのサプリメントはゼラチンに閉じ込められている。
+lopsided,不均衡な; 片寄った,The programme's treatment of the problem was lopsided.,その番組の問題の取り扱いは片寄ったものであった。
+breakwater,防波堤,A number of breakwaters protected the town from the tsunami.,幾つかの防波堤がその町を津波から守った。
+wean,を（〜から）引き離す; を離乳させる,The treatment was designed to wean addicts off the drug.,その治療は常習者を薬物から引き離すことを目的としていた。
+elapse,（時が）たつ; 過ぎ去る; 経過する,Many years have elapsed since the incident.,その出来事から何年もの時がたった。
+meteorology,気象学,Computers have greatly helped the study of meteorology.,コンピューターは気象学の研究に大いに役立ってきた。
+pliable,曲げやすい; 柔軟な,The wires were made of a pliable metal.,そのワイヤーは柔軟な金属で作られていた。
+extrapolate,（既知の事柄から）推定する,"Extrapolating from past trends, he predicted a rise in crime.",過去の傾向から推定して，彼は犯罪の増加を予測した。
+wherewithal,（〜するのに）必要な手段［金］,Many poor students lack the wherewithal to pursue higher education.,貧しい学生は高等教育を受けるだけの資力がない。
+alchemist,錬金術師,The alchemist tried to deceive wealthy clients.,錬金術師は裕福な顧客たちをだまそうとした。
+cipher,暗号; 暗号文書; を暗号で記す,The mathematician was employed to break enemy ciphers.,その数学者は敵の暗号を解読するために雇われた。
+compatriot,同国人; 同胞,He avoided his compatriots living in the same town.,彼は同じ町に住む同胞を避けた。
+handedness,利き手（の傾向）,Scientists are not exactly sure what causes handedness.,科学者たちには利き手の原因がはっきり分かっていない。
+locale,（特定の出来事に関連した）場所,Finding a good locale for the new library was difficult.,新しい図書館用に良い場所を見つけるのは難しかった。
+mangle,をずたずたに切る; めちゃめちゃにする,The car was mangled in the accident.,事故で車はめちゃめちゃに壊れた。
+pitfall,落とし穴; 陥りやすい間違い,Pitfalls await even the most experienced translators.,最も経験を積んだ翻訳家でも陥りやすい間違いはある。
+unearth,を発掘する,The scholar spent his life unearthing Mayan ruins.,その学者はマヤ遺跡の発掘に一生を費やした。
+amphibian,両生類; 水陸両用の,Amphibians live both in water and on land.,両生類は水中と陸地の両方に生息する。
+predispose,にあらかじめ（〜の）傾向を与える,His kindness predisposed him to be generous.,親切心が彼の寛大な性格の素地を作った。
+doomsday,最後の審判の日; 運命の決する日,The cult believed that doomsday would come soon.,そのカルト集団は最後の審判の日が近いと信じていた。
+slop,（液体が）こぼれる,Water from the bucket slopped onto the floor.,バケツの水が床にこぼれた。
+studious,研究熱心な; 勉学好きな,The girl had a naturally studious character.,その少女は生まれつき勉強好きな性格だった。
+subliminal,潜在意識に働き掛ける; サブリミナルの,In the UK, subliminal advertising is banned by law.,イギリスではサプリミナル広告は法律で禁止されている。
+tenfold,10倍に; 10倍の,House prices have increased tenfold over twenty years.,住宅価格は 20年で 10倍に上昇した。
+unblemished,傷のない; 汚点［欠点］のない,The policeman had an unblemished reputation for honesty.,その警察官は正直であるとして汚点のない評判を持っていた。
+apportion,を（〜に）割り当てる,The funds were apportioned out to three universities.,資金は 3つの大学に割り当てられた。
+pseudo-,（連結形）偽の; 見せ掛けだけの,Most people think astrology is a pseudo-science.,占星術は偽の科学だと考える人がほとんどだ。
+episodic,挿話的な; 散発的な; 偶発的な,The novel was episodic in structure.,その小説は挿話的構成になっていた。
+overshadow,に影を投げ掛ける,Our lives are overshadowed by the constant threat of earthquakes.,地震の絶え間ない脅威がわれわれの生活に影を投げ掛けている。
+pagoda,（ヒンズー教や仏教の）塔,Pagodas are common in some Buddhist countries.,塔は幾つかの仏教国でよく見られる。
+handrail,（階段などの）手すり; 欄干,Older people often need a handrail when climbing stairs.,お年寄りは階段を上るときに手すりを必要とすることが多い。
+daydream,白日夢; 空想; 空想する,Many teenagers have daydreams of becoming famous.,10代の若者の多くは有名になることを空想する。
+inflammable,燃えやすい; 引火性の,The toy was made of highly inflammable plastic.,そのおもちゃは非常に燃えやすいプラスチックでできていた。

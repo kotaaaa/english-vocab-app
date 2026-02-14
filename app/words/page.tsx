@@ -13,8 +13,7 @@ export default function WordsPage() {
   const filtered = words.filter(
     (w) =>
       w.english.toLowerCase().includes(search.toLowerCase()) ||
-      w.japanese.includes(search) ||
-      (w.category ?? "").includes(search)
+      w.japanese.includes(search)
   )
 
   return (
@@ -69,15 +68,13 @@ export default function WordsPage() {
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2 mb-1">
                       <span className="font-semibold text-gray-800 text-lg">{word.english}</span>
-                      {word.category && (
-                        <span className="text-xs bg-indigo-100 text-indigo-600 px-2 py-0.5 rounded-full">
-                          {word.category}
-                        </span>
-                      )}
                     </div>
                     <p className="text-gray-500">{word.japanese}</p>
-                    {word.example && (
-                      <p className="text-gray-400 text-sm mt-1 italic">{word.example}</p>
+                    {word.exampleEn && (
+                      <p className="text-gray-400 text-sm mt-1 italic">{word.exampleEn}</p>
+                    )}
+                    {word.exampleJa && (
+                      <p className="text-gray-400 text-sm mt-0.5">{word.exampleJa}</p>
                     )}
                     <div className="mt-2 max-w-xs">
                       <ProgressBar level={level} />
