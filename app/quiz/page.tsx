@@ -22,22 +22,22 @@ interface QuizQuestion {
   correctIndex: number
 }
 
-function buildQuestions(words: Word[]): QuizQuestion[] {
-  const shuffled = shuffle(words)
+function buildQuestions(targetWords: Word[], allWords: Word[]): QuizQuestion[] {
+  const shuffled = shuffle(targetWords)
   return shuffled.map((word) => {
-    const others = words.filter((w) => w.id !== word.id)
-    const wrongChoices = shuffle(others)
-      .slice(0, 3)
-      .map((w) => w.japanese)
+    const others = allWords.filter((w) => w.id !== word.id)
+    const wrongChoices = shuffle(others).slice(0, 3).map((w) => w.japanese)
     const allChoices = shuffle([word.japanese, ...wrongChoices])
     const correctIndex = allChoices.indexOf(word.japanese)
     return { word, choices: allChoices, correctIndex }
   })
 }
 
+type Mode = "all" | "weak"
+
 export default function QuizPage() {
   const { words } = useWords()
-  const { recordResult } = useProgress()
+  const { progressList, recordResult } = useProgress()
   const [questions, setQuestions] = useState<QuizQuestion[]>([])
   const [currentIndex, setCurrentIndex] = useState(0)
   const [lastResult, setLastResult] = useState<boolean | null>(null)
@@ -45,12 +45,23 @@ export default function QuizPage() {
   const [sessionIncorrect, setSessionIncorrect] = useState(0)
   const [finished, setFinished] = useState(false)
   const [started, setStarted] = useState(false)
+  const [mode, setMode] = useState<Mode>("all")
+
+  const weakWords = words
+    .map((w) => {
+      const p = progressList.find((p) => p.wordId === w.id)
+      return { word: w, incorrectCount: p?.incorrectCount ?? 0 }
+    })
+    .filter((x) => x.incorrectCount > 0)
+    .sort((a, b) => b.incorrectCount - a.incorrectCount)
+    .map((x) => x.word)
 
   const current = questions[currentIndex]
 
-  const handleStart = useCallback(() => {
-    if (words.length < 4) return
-    const qs = buildQuestions(words)
+  const handleStart = useCallback((selectedMode: Mode) => {
+    const target = selectedMode === "weak" ? weakWords : words
+    const qs = buildQuestions(target, words)
+    setMode(selectedMode)
     setQuestions(qs)
     setCurrentIndex(0)
     setLastResult(null)
@@ -58,7 +69,7 @@ export default function QuizPage() {
     setSessionIncorrect(0)
     setFinished(false)
     setStarted(true)
-  }, [words])
+  }, [words, weakWords])
 
   const handleAnswer = (correct: boolean) => {
     if (!current) return
@@ -91,16 +102,34 @@ export default function QuizPage() {
   }
 
   if (!started) {
+    const weakAvailable = weakWords.length >= 4
     return (
       <div className="max-w-2xl mx-auto text-center py-20">
         <h2 className="text-2xl font-bold text-gray-800 mb-2">クイズ</h2>
-        <p className="text-gray-500 mb-8">4択で英単語の意味を答えましょう！全 {words.length} 問</p>
-        <button
-          onClick={handleStart}
-          className="px-8 py-3 bg-indigo-600 text-white rounded-xl text-lg font-medium hover:bg-indigo-700 transition-colors"
-        >
-          スタート
-        </button>
+        <p className="text-gray-500 mb-8">モードを選んでスタート</p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <button
+            onClick={() => handleStart("all")}
+            className="px-8 py-4 bg-indigo-600 text-white rounded-xl text-lg font-medium hover:bg-indigo-700 transition-colors"
+          >
+            <p>全単語モード</p>
+            <p className="text-sm font-normal opacity-80 mt-1">{words.length} 問</p>
+          </button>
+          <button
+            onClick={() => handleStart("weak")}
+            disabled={!weakAvailable}
+            className="px-8 py-4 bg-red-500 text-white rounded-xl text-lg font-medium hover:bg-red-600 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+          >
+            <p>🔥 苦手単語モード</p>
+            <p className="text-sm font-normal opacity-80 mt-1">
+              {weakAvailable
+                ? `${weakWords.length} 問（間違い回数順）`
+                : weakWords.length > 0
+                  ? `4単語以上必要（現在 ${weakWords.length} 語）`
+                  : "まだ間違えた単語がありません"}
+            </p>
+          </button>
+        </div>
       </div>
     )
   }
@@ -130,12 +159,18 @@ export default function QuizPage() {
             </div>
           </div>
         </div>
-        <div className="flex gap-4 justify-center">
+        <div className="flex flex-wrap gap-3 justify-center">
           <button
-            onClick={handleStart}
+            onClick={() => handleStart(mode)}
             className="px-6 py-3 bg-indigo-600 text-white rounded-xl font-medium hover:bg-indigo-700 transition-colors"
           >
             もう一度
+          </button>
+          <button
+            onClick={() => setStarted(false)}
+            className="px-6 py-3 bg-gray-100 text-gray-700 rounded-xl font-medium hover:bg-gray-200 transition-colors"
+          >
+            モード選択へ
           </button>
           <Link
             href="/progress"
@@ -150,14 +185,20 @@ export default function QuizPage() {
 
   return (
     <div className="max-w-2xl mx-auto">
-      <div className="flex items-center justify-between mb-6">
-        <h2 className="text-xl font-bold text-gray-800">クイズ</h2>
+      <div className="flex items-center justify-between mb-4">
+        <div className="flex items-center gap-2">
+          <h2 className="text-xl font-bold text-gray-800">クイズ</h2>
+          {mode === "weak" && (
+            <span className="text-xs bg-red-100 text-red-600 px-2 py-0.5 rounded-full font-medium">
+              🔥 苦手モード
+            </span>
+          )}
+        </div>
         <span className="text-gray-500 text-sm">
           {currentIndex + 1} / {questions.length}
         </span>
       </div>
 
-      {/* Progress bar */}
       <div className="w-full bg-gray-200 rounded-full h-2 mb-8">
         <div
           className="h-2 rounded-full bg-indigo-500 transition-all duration-300"
@@ -165,16 +206,9 @@ export default function QuizPage() {
         />
       </div>
 
-      {/* Result feedback overlay */}
       {lastResult !== null && (
-        <div
-          className={`fixed inset-0 flex items-center justify-center z-50 pointer-events-none`}
-        >
-          <div
-            className={`text-8xl animate-bounce ${
-              lastResult ? "text-green-500" : "text-red-400"
-            }`}
-          >
+        <div className="fixed inset-0 flex items-center justify-center z-50 pointer-events-none">
+          <div className={`text-8xl animate-bounce ${lastResult ? "text-green-500" : "text-red-400"}`}>
             {lastResult ? "✓" : "✗"}
           </div>
         </div>

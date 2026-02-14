@@ -15,30 +15,45 @@ function shuffle<T>(arr: T[]): T[] {
   return a
 }
 
+type Mode = "all" | "weak"
+
 export default function FlashCardPage() {
   const { words } = useWords()
-  const { recordResult } = useProgress()
-  const [order, setOrder] = useState<string[]>(() =>
-    words.map((w) => w.id)
-  )
+  const { progressList, recordResult } = useProgress()
+  const [order, setOrder] = useState<string[]>([])
   const [currentIndex, setCurrentIndex] = useState(0)
   const [sessionCorrect, setSessionCorrect] = useState(0)
   const [sessionIncorrect, setSessionIncorrect] = useState(0)
   const [finished, setFinished] = useState(false)
   const [started, setStarted] = useState(false)
+  const [mode, setMode] = useState<Mode>("all")
+
+  // 苦手単語: 間違えたことがある単語を間違い回数の多い順に並べる
+  const weakWords = words
+    .map((w) => {
+      const p = progressList.find((p) => p.wordId === w.id)
+      return { word: w, incorrectCount: p?.incorrectCount ?? 0 }
+    })
+    .filter((x) => x.incorrectCount > 0)
+    .sort((a, b) => b.incorrectCount - a.incorrectCount)
+    .map((x) => x.word)
 
   const currentWordId = order[currentIndex]
   const currentWord = words.find((w) => w.id === currentWordId)
 
-  const handleStart = useCallback(() => {
-    const shuffled = shuffle(words.map((w) => w.id))
+  const handleStart = useCallback((selectedMode: Mode) => {
+    const target = selectedMode === "weak" ? weakWords : words
+    const shuffled = selectedMode === "weak"
+      ? weakWords.map((w) => w.id)  // 苦手モードは間違い回数順のまま
+      : shuffle(words.map((w) => w.id))
+    setMode(selectedMode)
     setOrder(shuffled)
     setCurrentIndex(0)
     setSessionCorrect(0)
     setSessionIncorrect(0)
     setFinished(false)
     setStarted(true)
-  }, [words])
+  }, [words, weakWords])
 
   const next = (correct: boolean) => {
     if (currentWord) {
@@ -69,13 +84,26 @@ export default function FlashCardPage() {
     return (
       <div className="max-w-2xl mx-auto text-center py-20">
         <h2 className="text-2xl font-bold text-gray-800 mb-2">フラッシュカード</h2>
-        <p className="text-gray-500 mb-8">全 {words.length} 単語をランダム順で学習します</p>
-        <button
-          onClick={handleStart}
-          className="px-8 py-3 bg-indigo-600 text-white rounded-xl text-lg font-medium hover:bg-indigo-700 transition-colors"
-        >
-          スタート
-        </button>
+        <p className="text-gray-500 mb-8">モードを選んでスタート</p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <button
+            onClick={() => handleStart("all")}
+            className="px-8 py-4 bg-indigo-600 text-white rounded-xl text-lg font-medium hover:bg-indigo-700 transition-colors"
+          >
+            <p>全単語モード</p>
+            <p className="text-sm font-normal opacity-80 mt-1">{words.length} 単語</p>
+          </button>
+          <button
+            onClick={() => handleStart("weak")}
+            disabled={weakWords.length === 0}
+            className="px-8 py-4 bg-red-500 text-white rounded-xl text-lg font-medium hover:bg-red-600 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+          >
+            <p>🔥 苦手単語モード</p>
+            <p className="text-sm font-normal opacity-80 mt-1">
+              {weakWords.length > 0 ? `${weakWords.length} 単語（間違い回数順）` : "まだ間違えた単語がありません"}
+            </p>
+          </button>
+        </div>
       </div>
     )
   }
@@ -103,12 +131,18 @@ export default function FlashCardPage() {
             </div>
           </div>
         </div>
-        <div className="flex gap-4 justify-center">
+        <div className="flex flex-wrap gap-3 justify-center">
           <button
-            onClick={handleStart}
+            onClick={() => handleStart(mode)}
             className="px-6 py-3 bg-indigo-600 text-white rounded-xl font-medium hover:bg-indigo-700 transition-colors"
           >
             もう一度
+          </button>
+          <button
+            onClick={() => setStarted(false)}
+            className="px-6 py-3 bg-gray-100 text-gray-700 rounded-xl font-medium hover:bg-gray-200 transition-colors"
+          >
+            モード選択へ
           </button>
           <Link
             href="/progress"
@@ -123,18 +157,24 @@ export default function FlashCardPage() {
 
   return (
     <div className="max-w-2xl mx-auto">
-      <div className="flex items-center justify-between mb-6">
-        <h2 className="text-xl font-bold text-gray-800">フラッシュカード</h2>
+      <div className="flex items-center justify-between mb-4">
+        <div className="flex items-center gap-2">
+          <h2 className="text-xl font-bold text-gray-800">フラッシュカード</h2>
+          {mode === "weak" && (
+            <span className="text-xs bg-red-100 text-red-600 px-2 py-0.5 rounded-full font-medium">
+              🔥 苦手モード
+            </span>
+          )}
+        </div>
         <span className="text-gray-500 text-sm">
           {currentIndex + 1} / {order.length}
         </span>
       </div>
 
-      {/* Progress bar */}
       <div className="w-full bg-gray-200 rounded-full h-2 mb-8">
         <div
           className="h-2 rounded-full bg-indigo-500 transition-all duration-300"
-          style={{ width: `${((currentIndex) / order.length) * 100}%` }}
+          style={{ width: `${(currentIndex / order.length) * 100}%` }}
         />
       </div>
 

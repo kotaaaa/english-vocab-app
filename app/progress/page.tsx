@@ -88,8 +88,9 @@ export default function ProgressPage() {
                       {total > 0 ? (
                         <>
                           <p>正答率: {acc}%</p>
-                          <p>
-                            {progress?.correctCount}正 / {progress?.incorrectCount}誤 ({total}回)
+                          <p className="text-green-500">✓ {progress?.correctCount}回</p>
+                          <p className={`${(progress?.incorrectCount ?? 0) > 0 ? "text-red-400 font-medium" : ""}`}>
+                            ✗ {progress?.incorrectCount}回
                           </p>
                         </>
                       ) : (
