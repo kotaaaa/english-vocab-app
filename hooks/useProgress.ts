@@ -55,6 +55,14 @@ export function useProgress() {
     })
   }, [])
 
+  const resetWeakWords = useCallback(() => {
+    setProgressList((prev) => {
+      const updated = prev.filter((p) => p.incorrectCount === 0)
+      saveProgress(updated)
+      return updated
+    })
+  }, [])
+
   const getWordProgress = useCallback(
     (wordId: string): Progress | undefined => {
       return progressList.find((p) => p.wordId === wordId)
@@ -62,5 +70,5 @@ export function useProgress() {
     [progressList]
   )
 
-  return { progressList, recordResult, getWordProgress }
+  return { progressList, recordResult, getWordProgress, resetWeakWords }
 }

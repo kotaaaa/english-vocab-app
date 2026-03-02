@@ -1,5 +1,6 @@
 "use client"
 
+import { useState } from "react"
 import { useWords } from "@/hooks/useWords"
 import { useProgress } from "@/hooks/useProgress"
 import ProgressBar from "@/components/ProgressBar"
@@ -18,7 +19,8 @@ export default function ProgressPage() {
   // 両バンドの単語を読み込み、合算表示
   const { words: words75 } = useWords("/words.csv", "band75")
   const { words: words70 } = useWords("/words-2501-2999.csv", "band70")
-  const { progressList } = useProgress()
+  const { progressList, resetWeakWords } = useProgress()
+  const [showConfirm, setShowConfirm] = useState(false)
 
   const allWords = [...words75, ...words70]
 
@@ -56,6 +58,39 @@ export default function ProgressPage() {
           </div>
         ))}
       </div>
+
+      {/* Reset weak words */}
+      {progressList.some((p) => p.incorrectCount > 0) && (
+        <div className="mb-8">
+          {showConfirm ? (
+            <div className="bg-red-50 border border-red-200 rounded-xl p-5">
+              <p className="text-red-700 font-medium mb-1">苦手単語の進捗をリセットしますか？</p>
+              <p className="text-red-500 text-sm mb-4">間違えたことがある単語の学習履歴がすべて削除されます。この操作は取り消せません。</p>
+              <div className="flex gap-3">
+                <button
+                  onClick={() => { resetWeakWords(); setShowConfirm(false) }}
+                  className="px-4 py-2 bg-red-600 text-white rounded-lg text-sm font-medium hover:bg-red-700 transition-colors"
+                >
+                  リセットする
+                </button>
+                <button
+                  onClick={() => setShowConfirm(false)}
+                  className="px-4 py-2 bg-white border border-gray-300 text-gray-600 rounded-lg text-sm font-medium hover:bg-gray-50 transition-colors"
+                >
+                  キャンセル
+                </button>
+              </div>
+            </div>
+          ) : (
+            <button
+              onClick={() => setShowConfirm(true)}
+              className="px-4 py-2 bg-white border border-red-300 text-red-600 rounded-lg text-sm font-medium hover:bg-red-50 transition-colors"
+            >
+              苦手単語の進捗をリセット
+            </button>
+          )}
+        </div>
+      )}
 
       {/* Word list */}
       {allWords.length === 0 ? (
