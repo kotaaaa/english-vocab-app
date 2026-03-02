@@ -3,10 +3,12 @@
 import { useState } from "react"
 import { useWords } from "@/hooks/useWords"
 import { useProgress } from "@/hooks/useProgress"
+import BandSelector, { useBand } from "@/components/BandSelector"
 import ProgressBar from "@/components/ProgressBar"
 
 export default function WordsPage() {
-  const { words, loading } = useWords()
+  const { band, setBand, csvPath, idPrefix } = useBand()
+  const { words, loading } = useWords(csvPath, idPrefix)
   const { getWordProgress } = useProgress()
   const [search, setSearch] = useState("")
 
@@ -25,13 +27,16 @@ export default function WordsPage() {
             {loading ? "読み込み中..." : `全 ${words.length} 単語`}
           </p>
         </div>
-        <a
-          href="/words.csv"
-          download
-          className="px-4 py-2 bg-white border border-gray-300 text-gray-600 rounded-lg hover:bg-gray-50 transition-colors text-sm font-medium"
-        >
-          ↓ CSVダウンロード
-        </a>
+        <div className="flex items-center gap-3">
+          <BandSelector band={band} onChange={setBand} />
+          <a
+            href={csvPath}
+            download
+            className="px-4 py-2 bg-white border border-gray-300 text-gray-600 rounded-lg hover:bg-gray-50 transition-colors text-sm font-medium"
+          >
+            ↓ CSV
+          </a>
+        </div>
       </div>
 
       <div className="bg-indigo-50 border border-indigo-100 rounded-xl px-4 py-3 mb-6 text-sm text-indigo-700">

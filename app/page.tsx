@@ -2,17 +2,23 @@
 
 import { useWords } from "@/hooks/useWords"
 import { useProgress } from "@/hooks/useProgress"
+import BandSelector, { useBand } from "@/components/BandSelector"
 import Link from "next/link"
 
 export default function DashboardPage() {
-  const { words } = useWords()
+  const { band, setBand, csvPath, idPrefix } = useBand()
+  const { words } = useWords(csvPath, idPrefix)
   const { progressList } = useProgress()
 
+  // 選択バンドの単語IDに該当する進捗のみフィルタ
+  const wordIds = new Set(words.map((w) => w.id))
+  const bandProgress = progressList.filter((p) => wordIds.has(p.wordId))
+
   const totalWords = words.length
-  const studiedWords = progressList.filter((p) => p.correctCount + p.incorrectCount > 0).length
-  const masteredWords = progressList.filter((p) => p.masteryLevel >= 5).length
-  const totalCorrect = progressList.reduce((s, p) => s + p.correctCount, 0)
-  const totalAnswers = progressList.reduce((s, p) => s + p.correctCount + p.incorrectCount, 0)
+  const studiedWords = bandProgress.filter((p) => p.correctCount + p.incorrectCount > 0).length
+  const masteredWords = bandProgress.filter((p) => p.masteryLevel >= 5).length
+  const totalCorrect = bandProgress.reduce((s, p) => s + p.correctCount, 0)
+  const totalAnswers = bandProgress.reduce((s, p) => s + p.correctCount + p.incorrectCount, 0)
   const accuracy = totalAnswers > 0 ? Math.round((totalCorrect / totalAnswers) * 100) : 0
 
   const stats = [
@@ -22,16 +28,19 @@ export default function DashboardPage() {
     { label: "正答率", value: `${accuracy}%`, icon: "🎯", color: "bg-purple-50 text-purple-600" },
   ]
 
-  const recentProgress = progressList
+  const recentProgress = bandProgress
     .slice()
     .sort((a, b) => new Date(b.lastStudied).getTime() - new Date(a.lastStudied).getTime())
     .slice(0, 5)
 
   return (
     <div className="max-w-4xl mx-auto">
-      <div className="mb-8">
-        <h2 className="text-2xl font-bold text-gray-800">ダッシュボード</h2>
-        <p className="text-gray-500 mt-1">学習の全体進捗を確認できます</p>
+      <div className="flex items-center justify-between mb-8">
+        <div>
+          <h2 className="text-2xl font-bold text-gray-800">ダッシュボード</h2>
+          <p className="text-gray-500 mt-1">学習の全体進捗を確認できます</p>
+        </div>
+        <BandSelector band={band} onChange={setBand} />
       </div>
 
       {/* Stats */}

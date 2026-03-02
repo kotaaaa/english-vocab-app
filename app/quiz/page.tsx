@@ -3,6 +3,7 @@
 import { useState, useCallback } from "react"
 import { useWords } from "@/hooks/useWords"
 import { useProgress } from "@/hooks/useProgress"
+import BandSelector, { useBand } from "@/components/BandSelector"
 import QuizCard from "@/components/QuizCard"
 import Link from "next/link"
 import { Word } from "@/types"
@@ -36,7 +37,8 @@ function buildQuestions(targetWords: Word[], allWords: Word[]): QuizQuestion[] {
 type Mode = "all" | "weak"
 
 export default function QuizPage() {
-  const { words } = useWords()
+  const { band, setBand, csvPath, idPrefix } = useBand()
+  const { words } = useWords(csvPath, idPrefix)
   const { progressList, recordResult } = useProgress()
   const [questions, setQuestions] = useState<QuizQuestion[]>([])
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -106,7 +108,10 @@ export default function QuizPage() {
     return (
       <div className="max-w-2xl mx-auto text-center py-20">
         <h2 className="text-2xl font-bold text-gray-800 mb-2">クイズ</h2>
-        <p className="text-gray-500 mb-8">モードを選んでスタート</p>
+        <p className="text-gray-500 mb-4">モードを選んでスタート</p>
+        <div className="mb-8">
+          <BandSelector band={band} onChange={setBand} />
+        </div>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button
             onClick={() => handleStart("all")}

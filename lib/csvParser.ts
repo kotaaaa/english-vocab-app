@@ -1,15 +1,30 @@
 import { Word } from "@/types"
 
-export function parseCsv(text: string): Word[] {
+function splitCsvLine(line: string): string[] {
+  // 4列固定: 先頭3つのカンマでsplitし、残りを最終列にまとめる
+  const parts: string[] = []
+  let commaCount = 0
+  let lastIndex = 0
+  for (let i = 0; i < line.length; i++) {
+    if (line[i] === "," && commaCount < 3) {
+      parts.push(line.slice(lastIndex, i).trim())
+      lastIndex = i + 1
+      commaCount++
+    }
+  }
+  parts.push(line.slice(lastIndex).trim())
+  return parts
+}
+
+export function parseCsv(text: string, idPrefix: string = "csv"): Word[] {
   const lines = text.split("\n").map((l) => l.trim()).filter(Boolean)
   if (lines.length < 2) return []
 
-  // 1行目はヘッダーとしてスキップ
-  // フォーマット: 単語,意味,例文(英語),例文(日本語)
+  // 1行目はヘッダーとしてスキップ（英語/日本語ヘッダー両対応）
   return lines.slice(1).map((line, i) => {
-    const cols = line.split(",").map((c) => c.trim())
+    const cols = splitCsvLine(line)
     return {
-      id: `csv-${i}`,
+      id: `${idPrefix}-${i}`,
       english: cols[0] ?? "",
       japanese: cols[1] ?? "",
       exampleEn: cols[2] || undefined,

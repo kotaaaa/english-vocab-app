@@ -15,12 +15,17 @@ const LEVEL_COLORS = [
 ]
 
 export default function ProgressPage() {
-  const { words } = useWords()
+  // 両バンドの単語を読み込み、合算表示
+  const { words: words75 } = useWords("/words.csv", "band75")
+  const { words: words70 } = useWords("/words-2501-2999.csv", "band70")
   const { progressList } = useProgress()
 
-  const wordProgress = words.map((word) => {
+  const allWords = [...words75, ...words70]
+
+  const wordProgress = allWords.map((word) => {
     const progress = progressList.find((p) => p.wordId === word.id)
-    return { word, progress }
+    const bandLabel = word.id.startsWith("band75") ? "7.5" : "7.0"
+    return { word, progress, bandLabel }
   })
 
   const byLevel = [0, 1, 2, 3, 4, 5].map((level) => ({
@@ -38,7 +43,7 @@ export default function ProgressPage() {
     <div className="max-w-4xl mx-auto">
       <div className="mb-8">
         <h2 className="text-2xl font-bold text-gray-800">進捗管理</h2>
-        <p className="text-gray-500 mt-1">各単語の習熟度を確認できます</p>
+        <p className="text-gray-500 mt-1">各単語の習熟度を確認できます（全バンド合算）</p>
       </div>
 
       {/* Level distribution */}
@@ -53,13 +58,13 @@ export default function ProgressPage() {
       </div>
 
       {/* Word list */}
-      {words.length === 0 ? (
+      {allWords.length === 0 ? (
         <div className="text-center py-16 text-gray-400">
           単語が登録されていません
         </div>
       ) : (
         <div className="space-y-3">
-          {sorted.map(({ word, progress }) => {
+          {sorted.map(({ word, progress, bandLabel }) => {
             const level = progress?.masteryLevel ?? 0
             const total = (progress?.correctCount ?? 0) + (progress?.incorrectCount ?? 0)
             const acc = total > 0 ? Math.round(((progress?.correctCount ?? 0) / total) * 100) : null
@@ -76,6 +81,9 @@ export default function ProgressPage() {
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2 mb-1">
                       <span className="font-semibold text-gray-800">{word.english}</span>
+                      <span className="text-xs bg-gray-100 text-gray-500 px-1.5 py-0.5 rounded">
+                        Band {bandLabel}
+                      </span>
                     </div>
                     <p className="text-gray-500 text-sm mb-3">{word.japanese}</p>
                     <ProgressBar level={level} />

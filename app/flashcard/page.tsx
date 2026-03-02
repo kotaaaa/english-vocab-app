@@ -3,6 +3,7 @@
 import { useState, useCallback } from "react"
 import { useWords } from "@/hooks/useWords"
 import { useProgress } from "@/hooks/useProgress"
+import BandSelector, { useBand } from "@/components/BandSelector"
 import FlashCard from "@/components/FlashCard"
 import Link from "next/link"
 
@@ -18,7 +19,8 @@ function shuffle<T>(arr: T[]): T[] {
 type Mode = "all" | "weak"
 
 export default function FlashCardPage() {
-  const { words } = useWords()
+  const { band, setBand, csvPath, idPrefix } = useBand()
+  const { words } = useWords(csvPath, idPrefix)
   const { progressList, recordResult } = useProgress()
   const [order, setOrder] = useState<string[]>([])
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -28,7 +30,6 @@ export default function FlashCardPage() {
   const [started, setStarted] = useState(false)
   const [mode, setMode] = useState<Mode>("all")
 
-  // 苦手単語: 間違えたことがある単語を間違い回数の多い順に並べる
   const weakWords = words
     .map((w) => {
       const p = progressList.find((p) => p.wordId === w.id)
@@ -42,9 +43,8 @@ export default function FlashCardPage() {
   const currentWord = words.find((w) => w.id === currentWordId)
 
   const handleStart = useCallback((selectedMode: Mode) => {
-    const target = selectedMode === "weak" ? weakWords : words
     const shuffled = selectedMode === "weak"
-      ? weakWords.map((w) => w.id)  // 苦手モードは間違い回数順のまま
+      ? weakWords.map((w) => w.id)
       : shuffle(words.map((w) => w.id))
     setMode(selectedMode)
     setOrder(shuffled)
@@ -84,7 +84,10 @@ export default function FlashCardPage() {
     return (
       <div className="max-w-2xl mx-auto text-center py-20">
         <h2 className="text-2xl font-bold text-gray-800 mb-2">フラッシュカード</h2>
-        <p className="text-gray-500 mb-8">モードを選んでスタート</p>
+        <p className="text-gray-500 mb-4">モードを選んでスタート</p>
+        <div className="mb-8">
+          <BandSelector band={band} onChange={setBand} />
+        </div>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button
             onClick={() => handleStart("all")}
